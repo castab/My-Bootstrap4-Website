@@ -1,6 +1,6 @@
 <!-- browser-sync start --server --files="**/*" -->
 <!DOCTYPE html>
-<html ng-app="app" ng-controller="mainCtrl as vm" ng-cloak>
+<html ng-app="app" ng-controller="mainCtrl as vm">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,34 +12,8 @@
 
 <body>
 
-<div class="columns is-mobile" style="padding-bottom:50px;"></div>
 
-<div class="columns is-mobile jqslide" ng-if="vm.exists">
-    <div class="column"></div>
-    <div class="column is-one-quarter-desktop is-half-mobile is-centered">
-        <figure class="image">
-            <img class="is-circle" src="me.jpg">
-        </figure>
-    </div>
-    <div class="column"></div>
-</div>
-
-<div class="columns is-mobile">
-    <div class="column"></div>
-    <div class="column has-text-centered">
-            <a class="button" ng-click="vm.click();">Click Me</a>>
-    </div>
-    <div class="column"></div>
-</div>
-
-
-
-
-
-
-
-
-
+<div ng-view ng-cloak></div>
 
 
 
@@ -55,15 +29,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.min.js"></script>
 <script>                
     (function () {
-        angular.module('app', ['ngAnimate'])
+        angular.module('app', ['ngAnimate', 'ngRoute'])
         .controller('mainCtrl', function($scope, $http, $timeout) {
 
             vm = this;
             vm.exists = true;
+            vm.buttonClicked = false;
             vm.click = function() {
                 vm.exists = !vm.exists;
+                vm.buttonClicked = !vm.buttonClicked;
             }
 
 
@@ -75,6 +52,7 @@
                     jQuery(element).slideDown('slow', doneFn);
                     return function(isCancelled) {
                         element.stop();
+                        vm.landingButtonText = "Let's get started!"
                     }
                 },
                 leave: function(element, doneFn) {
@@ -85,6 +63,12 @@
                 }
             }
         }])
+        .config(function($routeProvider) {
+            $routeProvider
+            .when("/", {
+                templateUrl: "test.html"
+            })
+        })
 
     })();
 
@@ -93,7 +77,16 @@
 html {
     background-color:#3C3C3C;
 }
-
+.box {
+    background-color: #606060;
+    color:white;
+}
+.columns {
+    max-width: 100%;
+}
+.navbar {
+    background-color:#DEDEDE;
+}
 .slide {
     /* The name of the animation */
     animation-name: slide;
