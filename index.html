@@ -4,63 +4,68 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Hi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   </head>
-  <body>
-        <section class="section">
-                <a class="button" ng-click="vm.click();">Button</a>
-            </section>
-      <section class="section slide">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>{{vm.text}}</strong>!
-      </p>
+
+
+<body>
+
+<div class="columns is-mobile" style="padding-bottom:50px;"></div>
+
+<div class="columns is-mobile jqslide" ng-if="vm.exists">
+    <div class="column"></div>
+    <div class="column is-one-quarter-desktop is-half-mobile is-centered">
+        <figure class="image">
+            <img class="is-circle" src="me.jpg">
+        </figure>
     </div>
-  </section>
-        <section class="hero is-warning jqslide" ng-if="vm.exists">
-            <div class="hero-body">
-                <div class="container">
-                <h1 class="title">
-                    Primary title
-                </h1>
-                <h2 class="subtitle">
-                    Primary subtitle
-                </h2>
-                </div>
-            </div>
-        </section>
-  <section class="section slide">
-    <div class="container">
-      <h1 class="title">
-        Hello World
-      </h1>
-      <p class="subtitle">
-        My first website with <strong>{{vm.text}}</strong>!
-      </p>
+    <div class="column"></div>
+</div>
+
+<div class="columns is-mobile">
+    <div class="column"></div>
+    <div class="column has-text-centered">
+            <a class="button" ng-click="vm.click();">Click Me</a>>
     </div>
-  </section>
-  </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.min.js"></script>
+    <div class="column"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.min.js"></script>
 <script>                
     (function () {
         angular.module('app', ['ngAnimate'])
         .controller('mainCtrl', function($scope, $http, $timeout) {
 
             vm = this;
-            vm.text = "Bulma";
-            vm.someClass = false;
             vm.exists = true;
-
-            vm.click = function () {
+            vm.click = function() {
                 vm.exists = !vm.exists;
             }
+
 
         })
         .animation('.jqslide', [function() {
@@ -86,7 +91,7 @@
 </script>
 <style>
 html {
-    background-color:#545976;
+    background-color:#3C3C3C;
 }
 
 .slide {
