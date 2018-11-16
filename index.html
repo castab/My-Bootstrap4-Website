@@ -7,11 +7,20 @@
     <title>Hi</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="default.css">
   </head>
 
 
 <body>
 
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <h2>Brayan J. Castaneda</h2>
+    </a>
+
+  </div>
+</nav>
 
 <div ng-view ng-cloak></div>
 
@@ -30,107 +39,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-animate.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular-route.min.js"></script>
-<script>                
-    (function () {
-        angular.module('app', ['ngAnimate', 'ngRoute'])
-        .controller('mainCtrl', function($scope, $http, $timeout) {
-
-            vm = this;
-            vm.exists = true;
-            vm.buttonClicked = false;
-            vm.click = function() {
-                vm.exists = !vm.exists;
-                vm.buttonClicked = !vm.buttonClicked;
-            }
-
-
-        })
-        .animation('.jqslide', [function() {
-            return {
-                enter: function(element, doneFn) {
-                    element.css('display', 'none');
-                    jQuery(element).slideDown('slow', doneFn);
-                    return function(isCancelled) {
-                        element.stop();
-                        vm.landingButtonText = "Let's get started!"
-                    }
-                },
-                leave: function(element, doneFn) {
-                    jQuery(element).slideUp('slow', doneFn);
-                    return function(isCancelled) {
-                        element.stop();
-                    }
-                }
-            }
-        }])
-        .config(function($routeProvider) {
-            $routeProvider
-            .when("/", {
-                templateUrl: "test.html"
-            })
-        })
-
-    })();
-
-</script>
-<style>
-html {
-    background-color:#3C3C3C;
-}
-.box {
-    background-color: #606060;
-    color:white;
-}
-.columns {
-    max-width: 100%;
-}
-.navbar {
-    background-color:#DEDEDE;
-}
-.slide {
-    /* The name of the animation */
-    animation-name: slide;
-    -webkit-animation-name: slide; 
-    /* The duration of the animation */
-    animation-duration: 1s; 
-    -webkit-animation-duration: 1s;
-    /* Make the element visible */
-    visibility: visible; 
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(60%);
-    } 
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    } 
-}
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        -webkit-transform: translateY(60%);
-    } 
-    100% {
-        opacity: 1;
-        -webkit-transform: translateY(0%);
-    }
-}
-.ng-enter {
-    /* The name of the animation */
-    animation-name: scale-in-ver-top;
-    -webkit-animation-name: scale-in-ver-top; 
-    /* The duration of the animation */
-    animation-duration: 1s;
-    backface-visibility: hidden;
-    -webkit-animation-duration: 1s;
-    -webkit-backface-visibility: hidden;
-    /* Make the element visible */
-}
-.ng-enter-active {
-    opacity: 0;
-}
-</style>
+<script src="app.js"></script>
 </html>

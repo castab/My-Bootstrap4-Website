@@ -1,0 +1,58 @@
+html {
+    background-color:#3C3C3C;
+}
+.box {
+    background-color: #606060;
+    color:white;
+}
+.columns {
+    max-width: 100%;
+}
+.navbar {
+    background-color:#DEDEDE;
+}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    /* The duration of the animation */
+    animation-duration: 1s; 
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible; 
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(60%);
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    } 
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(60%);
+    } 
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+.ng-enter {
+    /* The name of the animation */
+    animation-name: scale-in-ver-top;
+    -webkit-animation-name: scale-in-ver-top; 
+    /* The duration of the animation */
+    animation-duration: 1s;
+    backface-visibility: hidden;
+    -webkit-animation-duration: 1s;
+    -webkit-backface-visibility: hidden;
+    /* Make the element visible */
+}
+.ng-enter-active {
+    opacity: 0;
+}
