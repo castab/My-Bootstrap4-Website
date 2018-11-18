@@ -1,0 +1,50 @@
+{
+      "projects": {
+          "current": [
+            {
+                "project_name": "Addressable High-Power RGBLEDs",
+                "project_icon": "fas fa-sun",
+                "project_card_image_url": "ledstrip.jpg",
+                "description": "https://lh3.googleusercontent.com/-suX40NEclEA/AAAAAAAAAAI/AAAAAAAAAi4/d84RCYDe4oQ/s128-c0x00000000-cc-rp-mo/photo.jpg"
+              },
+              {
+                "project_name": "Front-End Development using Modern Frameworks",
+                "project_icon": "fab fa-angular",
+                "project_card_image_url": "http://www.olomweb.com/wp-content/uploads/2018/02/html-css-javascript-1024x576.jpg",
+                "description": "https://lh3.googleusercontent.com/-suX40NEclEA/AAAAAAAAAAI/AAAAAAAAAi4/d84RCYDe4oQ/s128-c0x00000000-cc-rp-mo/photo.jpg"
+              },
+              {
+                "project_name": "IoT: Remote Power Switch using ESP Microprocessor",
+                "project_icon": "fas fa-wifi",
+                "project_card_image_url": "https://s26913.pcdn.co/wp-content/uploads/2017/07/AdobeStock_133171498-1024x576.jpeg",
+                "description": "https://lh3.googleusercontent.com/-suX40NEclEA/AAAAAAAAAAI/AAAAAAAAAi4/d84RCYDe4oQ/s128-c0x00000000-cc-rp-mo/photo.jpg"
+              },
+              {
+                "project_name": "Call Log Management Center using PHP & MySQL",
+                "project_icon": "fas fa-database",
+                "project_card_image_url": "phpsql.png",
+                "description": "https://lh3.googleusercontent.com/-suX40NEclEA/AAAAAAAAAAI/AAAAAAAAAi4/d84RCYDe4oQ/s128-c0x00000000-cc-rp-mo/photo.jpg"
+              }
+          ],
+          "past": [
+              {
+                "project_name": "SLAM Drone using Image Processing",
+                "project_icon": "fas fa-helicopter",
+                "project_card_image_url": "http://www.chartseo.com/wp-content/uploads/2018/02/Neurala-SDK-for-Drones-Image-1024x576.jpg",
+                "description": "https://lh3.googleusercontent.com/-suX40NEclEA/AAAAAAAAAAI/AAAAAAAAAi4/d84RCYDe4oQ/s128-c0x00000000-cc-rp-mo/photo.jpg"
+              },
+              {
+                "project_name": "Wild West Shootout Game using PIC Microcontroller and LED Strip",
+                "project_icon": "fas fa-laptop-code",
+                "project_card_image_url": "https://media.bizj.us/view/img/337711/microchip*1024xx1500-844-0-77.jpg",
+                "description": "https://lh3.googleusercontent.com/-suX40NEclEA/AAAAAAAAAAI/AAAAAAAAAi4/d84RCYDe4oQ/s128-c0x00000000-cc-rp-mo/photo.jpg"
+              },
+              {
+                "project_name": "DC Isolated Bluetooth Audio Adapter",
+                "project_icon": "fab fa-bluetooth-b",
+                "project_card_image_url": "https://hdwallpaper20.com/wp-content/uploads/data/2018/4/5/Blue-Gray-Wallpaper-PIC-HWB439733-1024x576.jpg",
+                "description": "https://lh3.googleusercontent.com/-suX40NEclEA/AAAAAAAAAAI/AAAAAAAAAi4/d84RCYDe4oQ/s128-c0x00000000-cc-rp-mo/photo.jpg"
+              }
+          ]
+      }
+}
