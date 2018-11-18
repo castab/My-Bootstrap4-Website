@@ -1,11 +1,12 @@
 <!-- browser-sync start --server --files="**/*" -->
 <!DOCTYPE html>
-<html ng-app="app" ng-controller="mainCtrl as vm">
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#263238">
     <title>Hi</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="default.css">
   </head>
@@ -13,16 +14,27 @@
 
 <body>
 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item">
-      <h2>Brayan J. Castaneda</h2>
-    </a>
-
+<div class="sticky-top" ng-controller="navbarCtrl as vm">
+<div class="jqslide" ng-if="vm.isNavbarActive();" ng-cloak>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ECEFF1" ng-init="navbarCollapsed = true;">
+  <a class="navbar-brand" href="#">Brayan J. Castaneda</a>
+  <button class="navbar-toggler" type="button" ng-click="navbarCollapsed = !navbarCollapsed">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="menuBurger navbar-collapse" ng-if="!navbarCollapsed">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" href="#">Current Projects <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Past Projects</a>
+      <a class="nav-item nav-link" href="#">About Me</a>
+    </div>
   </div>
 </nav>
+</div>
+</div>
 
-<div ng-view ng-cloak></div>
+
+
+<div ng-controller="mainCtrl as vm" class="jqslide" ng-view></div>
 
 
 

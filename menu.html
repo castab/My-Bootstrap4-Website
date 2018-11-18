@@ -1,0 +1,45 @@
+<div class="container-fluid" style="padding:0;margin:0;">
+<div class="jumbotron jumbotron-fluid" style="color:#263238;">
+    <div class="container">
+        <h1 class="display-4">Current Projects</h1>
+        <p class="lead">My active interests and activities.</p>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div ng-repeat="project in vm.projectData.current" class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="margin-bottom:5px;">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="{{project.project_card_image_url}}">
+                    <div class="card-body">
+                    <h6 class="card-title d-flex flex-row justify-content-between align-items-start">
+                        <p>{{project.project_name}}</p>
+                        <i class="{{project.project_icon}}" style="font-size:1.8em;"></i>
+                    </h6>
+                    <p class="card-text">{{project.project_name}}</p>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Past Projects</h1>
+        <p class="lead">A look at some of my older work.</p>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div ng-repeat="project in vm.projectData.past" class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="margin-bottom:5px;">
+                <div class="card mb-4 shadow-sm">
+                    <img class="card-img-top" src="{{project.project_card_image_url}}">
+                    <div class="card-body">
+                    <h6 class="card-title d-flex flex-row justify-content-between align-items-start">
+                        <p>{{project.project_name}}</p>
+                        <i class="{{project.project_icon}}" style="font-size:1.8em;"></i>
+                    </h6>
+                    <p class="card-text">{{project.project_name}}</p>
+                </div>
+                </div>
+        </div>
+    </div>
+</div>

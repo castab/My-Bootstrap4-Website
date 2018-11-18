@@ -1,16 +1,45 @@
 (function () {
     angular.module('app', ['ngAnimate', 'ngRoute'])
-    .controller('mainCtrl', function($scope, $http, $timeout) {
+    .controller('mainCtrl', function($scope, $http, $timeout, $location) {
 
         vm = this;
         vm.exists = true;
         vm.buttonClicked = false;
+        vm.projectData = null;
+        vm.introComplete = false;
+
         vm.click = function() {
             vm.exists = !vm.exists;
             vm.buttonClicked = !vm.buttonClicked;
         }
+        vm.clickStart = function() {
+            vm.introComplete = true;
+            $location.path('/menu')
+        }
+        vm.burgerToggle = function() {
+            console.log('burger toggle');
+        }
+
+        $http.get('navigate.json').then(
+            function(resp) {
+                vm.projectData = resp.data.projects;
+            },
+            function (error) {
+                console.log("error getting data")
+            }
+        )
 
 
+    })
+    .controller('navbarCtrl', function($location) {
+        vm = this;
+        vm.isNavbarActive = function() {
+            if ($location.path() != '/') {
+                return true;
+            } else {
+                return false;
+            }
+        }
     })
     .animation('.jqslide', [function() {
         return {
@@ -19,7 +48,6 @@
                 jQuery(element).slideDown('slow', doneFn);
                 return function(isCancelled) {
                     element.stop();
-                    vm.landingButtonText = "Let's get started!"
                 }
             },
             leave: function(element, doneFn) {
@@ -30,10 +58,30 @@
             }
         }
     }])
+    .animation('.menuBurger', [function() {
+        return {
+            enter: function(element, doneFn) {
+                element.css('display', 'none');
+                jQuery(element).slideDown('fast', doneFn);
+                return function(isCancelled) {
+                    element.stop();
+                }
+            },
+            leave: function(element, doneFn) {
+                jQuery(element).slideUp('fast', doneFn);
+                return function(isCancelled) {
+                    element.stop();
+                }
+            }
+        }
+    }])
     .config(function($routeProvider) {
         $routeProvider
         .when("/", {
-            templateUrl: "test.html"
+            templateUrl: "blank.html"
+        })
+        .when("/menu", {
+            templateUrl: "menu.html"
         })
     })
 
