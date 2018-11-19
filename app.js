@@ -23,7 +23,6 @@
         $http.get('navigate.json').then(
             function(resp) {
                 vm.projectData = resp.data.projects;
-                console.log(vm.projectData)
             },
             function (error) {
                 console.log("error getting data")
