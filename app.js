@@ -15,14 +15,15 @@
         vm.clickStart = function() {
             vm.introComplete = true;
             $location.path('/menu')
-        }
-        vm.burgerToggle = function() {
-            console.log('burger toggle');
+            vm.exists = true;
+            vm.buttonClicked = false;
+            vm.introComplete = false;
         }
 
         $http.get('navigate.json').then(
             function(resp) {
                 vm.projectData = resp.data.projects;
+                console.log(vm.projectData)
             },
             function (error) {
                 console.log("error getting data")
@@ -40,6 +41,16 @@
                 return false;
             }
         }
+    })
+    .run(function($http, $templateCache) {
+        $http.get('menu.html').then(
+            function(resp) {
+                $templateCache.put('menu.html', resp.data);
+            },
+            function(error) {
+                console.log('Error caching menu.html');
+            }
+        )
     })
     .animation('.jqslide', [function() {
         return {

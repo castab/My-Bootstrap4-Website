@@ -9,7 +9,7 @@
     <div class="row justify-content-center">
         <div ng-repeat="project in vm.projectData.current" class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="margin-bottom:5px;">
                 <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="{{project.project_card_image_url}}">
+                    <img class="card-img-top" ng-src="{{project.project_card_image_url}}">
                     <div class="card-body">
                     <h6 class="card-title d-flex flex-row justify-content-between align-items-start">
                         <p>{{project.project_name}}</p>
@@ -31,7 +31,7 @@
     <div class="row justify-content-center">
         <div ng-repeat="project in vm.projectData.past" class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="margin-bottom:5px;">
                 <div class="card mb-4 shadow-sm">
-                    <img class="card-img-top" src="{{project.project_card_image_url}}">
+                    <img class="card-img-top" ng-src="{{project.project_card_image_url}}">
                     <div class="card-body">
                     <h6 class="card-title d-flex flex-row justify-content-between align-items-start">
                         <p>{{project.project_name}}</p>
