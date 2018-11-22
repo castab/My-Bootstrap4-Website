@@ -1,0 +1,18 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">{{vm.currentProject.project_name}}</h1>
+    <p class="lead">{{vm.currentProject.project_description}}</p>
+  </div>
+</div>
+
+<div class="container-fluid" ng-repeat="section in vm.currentProject.project_content">
+  <div class="card-deck">
+      <div ng-repeat="content in section" class="card mb-4 shadow-sm">
+        <img class="card-img-top" ng-src="{{content.image}}">
+        <div class="card-body">
+          <h6 class="card-title">{{content.title}}</h6>
+          <p class="card-text">{{content.text}}</p>
+        </div>
+      </div>
+  </div>
+</div>

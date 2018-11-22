@@ -15,36 +15,45 @@
 <body>
 
 <div class="sticky-top" ng-controller="navbarCtrl as vm">
-<div class="jqslide" ng-if="vm.isNavbarActive();" ng-cloak>
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ECEFF1">
-  <a class="navbar-brand" href="#">Brayan J. Castaneda</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link">Current Projects <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">Past Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link">About Me</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input ng-disabled="true" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button ng-disabled="true" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
-</nav>
-</div>
+  <div class="jqslide" ng-if="vm.isNavbarActive();" ng-cloak>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:#ECEFF1">
+      <a class="navbar-brand" href="#">Brayan J. Castaneda</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer;">
+                  Current Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a ng-repeat="project in vm.projectData.current" class="dropdown-item" style="font-size:.7em;">{{project.project_name}}</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer;">
+                  Past Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a ng-repeat="project in vm.projectData.past" class="dropdown-item" style="font-size:.7em;">{{project.project_name}}</a>
+                </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">About Me</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input ng-disabled="true" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button ng-disabled="true" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+    </nav>
+  </div>
 </div>
 
 
 <div ng-controller="mainCtrl as vm" class="jqslide" ng-view></div>
-
 
 
 </body>

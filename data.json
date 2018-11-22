@@ -1,0 +1,95 @@
+{
+      "projects": {
+          "current": [
+            {
+                "project_name": "Addressable High-Power RGBLEDs",
+                "project_icon": "fas fa-sun",
+                "project_card_image_url": "ledstrip.jpg",
+                "project_description": "Scaling the addressability of LEDs to their high-powered versions.",
+                "route": "rgbleds",
+                "project_content": {
+                  "section1": [
+                    {
+                      "image": "schematic.jpg",
+                      "title": "Eureka Moment!",
+                      "text": "Interestingly enough, the vision for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
+                    },
+                    {
+                      "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
+                      "title": "WS2811 Addressable LEDs",
+                      "text": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                    }
+                  ]
+                }
+              },
+              {
+                "project_name": "Front-End Development using Modern Frameworks",
+                "project_icon": "fab fa-angular",
+                "project_card_image_url": "http://www.olomweb.com/wp-content/uploads/2018/02/html-css-javascript-1024x576.jpg",
+                "project_description": "This is a test description text.  More text. more more more text.",
+                "route": "webdev",
+                "project_content": {
+                  "section1": "Content for section 1",
+                  "section2": "Content for section 2"
+                }
+              },
+              {
+                "project_name": "IoT: Remote Power Switch using ESP Microprocessor",
+                "project_icon": "fas fa-wifi",
+                "project_card_image_url": "https://s26913.pcdn.co/wp-content/uploads/2017/07/AdobeStock_133171498-1024x576.jpeg",
+                "project_description": "This is a test description text.  More text. more more more text.",
+                "route": "iot",
+                "project_content": {
+                  "section1": "Content for section 1",
+                  "section2": "Content for section 2"
+                }
+              },
+              {
+                "project_name": "Call Log Management Center using PHP & MySQL",
+                "project_icon": "fas fa-database",
+                "project_card_image_url": "phpsql.png",
+                "project_description": "This is a test description text.  More text. more more more text.",
+                "route": "clmc",
+                "project_content": {
+                  "section1": "Content for section 1",
+                  "section2": "Content for section 2"
+                }
+              }
+          ],
+          "past": [
+              {
+                "project_name": "SLAM Drone using Image Processing",
+                "project_icon": "fas fa-helicopter",
+                "project_card_image_url": "http://www.chartseo.com/wp-content/uploads/2018/02/Neurala-SDK-for-Drones-Image-1024x576.jpg",
+                "project_description": "This is a test description text.  More text. more more more text.",
+                "route": "slam",
+                "project_content": {
+                  "section1": "Content for section 1",
+                  "section2": "Content for section 2"
+                }
+              },
+              {
+                "project_name": "Wild West Shootout Game using PIC Microcontroller and LED Strip",
+                "project_icon": "fas fa-laptop-code",
+                "project_card_image_url": "https://media.bizj.us/view/img/337711/microchip*1024xx1500-844-0-77.jpg",
+                "project_description": "This is a test description text.  More text. more more more text.",
+                "route": "wildwest",
+                "project_content": {
+                  "section1": "Content for section 1",
+                  "section2": "Content for section 2"
+                }
+              },
+              {
+                "project_name": "DC Isolated Bluetooth Audio Adapter",
+                "project_icon": "fab fa-bluetooth-b",
+                "project_card_image_url": "https://hdwallpaper20.com/wp-content/uploads/data/2018/4/5/Blue-Gray-Wallpaper-PIC-HWB439733-1024x576.jpg",
+                "project_description": "This is a test description text.  More text. more more more text.",
+                "route": "bluetooth",
+                "project_content": {
+                  "section1": "Content for section 1",
+                  "section2": "Content for section 2"
+                }
+              }
+          ]
+      }
+}
