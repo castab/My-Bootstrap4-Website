@@ -1,62 +1,117 @@
 {
       "projects": {
-          "current": [
-            {
-                "project_name": "Addressable High-Power RGBLEDs",
-                "project_icon": "fas fa-sun",
-                "project_card_image_url": "ledstrip.jpg",
-                "project_description": "Scaling the addressability of LEDs to their high-powered versions.",
-                "route": "rgbleds",
-                "project_content": {
-                  "section1": [
-                    {
-                      "image": "schematic.jpg",
-                      "title": "Eureka Moment!",
-                      "text": "Interestingly enough, the vision for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
-                    },
-                    {
-                      "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
-                      "title": "WS2811 Addressable LEDs",
-                      "text": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
-                    }
-                  ]
-                }
-              },
+          "current": {
+            "title": "Current Projects",
+            "description": "My active interests and activities.",
+            "projects": [
               {
-                "project_name": "Front-End Development using Modern Frameworks",
-                "project_icon": "fab fa-angular",
-                "project_card_image_url": "http://www.olomweb.com/wp-content/uploads/2018/02/html-css-javascript-1024x576.jpg",
-                "project_description": "This is a test description text.  More text. more more more text.",
-                "route": "webdev",
-                "project_content": {
-                  "section1": "Content for section 1",
-                  "section2": "Content for section 2"
+                  "project_name": "Addressable High-Power RGBLEDs",
+                  "project_icon": "fas fa-sun",
+                  "project_card_image_url": "ledstrip.jpg",
+                  "project_description": "Scaling the addressability of LEDs to their high-powered versions.",
+                  "route": "rgbleds",
+                  "project_content": {
+                    "section1": [
+                      {
+                        "image": "schematic.jpg",
+                        "title": "Eureka Moment!",
+                        "text": {
+                          "paragraph1": "Interestingly enough, the inspiration for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
+                        }
+                      },
+                      {
+                        "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
+                        "title": "WS2811 Addressable LEDs",
+                        "text": {
+                          "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "project_name": "Front-End Development using Modern Frameworks",
+                  "project_icon": "fab fa-angular",
+                  "project_card_image_url": "http://www.olomweb.com/wp-content/uploads/2018/02/html-css-javascript-1024x576.jpg",
+                  "project_description": "Using dynamic web pages to deliver full-featured services that turn data into digestible information.",
+                  "route": "webdev",
+                  "project_content": {
+                    "section1": [
+                      {
+                        "image": "schematic.jpg",
+                        "title": "The Beginnings",
+                        "text": {
+                          "paragraph1": "My very first experience with any kind of web development came from tinkering around with the ESP8266 WiFi-enabled microcontroller. Before I knew what APIs were (much less, write an API), my default interface with the microcontroller was a very simple website that included a simple dialog and a drop-down box that would turn one of its IO pins HIGH or LOW; triggering an attached relay.",
+                          "paragraph2": "Fast-forwarding to a crazy summer, I stumbled upon Lynda.com and found a beginner's course on PHP! By the end of the summer, I was taken back with what could be done with a little bit of server-side processing and some persistant storage such as SQL.",
+                          "paragraph3": "Over time, I picked up a good chunk of HTML and CSS, but I would have to say that my biggest leap was my internship with Target. Throughout my internship, I picked up AngularJS and I couldn't believe how far behind I was with respect to data/session binding. To drive this further, AngularJS isn't even one of the most recent frameworks!"
+                        }
+                      },
+                      {
+                        "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
+                        "title": "Student of the Web",
+                        "text": {
+                          "paragraph1": "I've always wondered how some websites just make their websites look just so outstandingly good! All I needed was a little push to see that it really is some heavy CSS'ing with JavaScript handling the reigns. Aside from this website, you can check out some of my other work:"
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "project_name": "IoT: Remote Power Switch using ESP Microprocessor",
+                  "project_icon": "fas fa-wifi",
+                  "project_card_image_url": "https://s26913.pcdn.co/wp-content/uploads/2017/07/AdobeStock_133171498-1024x576.jpeg",
+                  "project_description": "This is a test description text.  More text. more more more text.",
+                  "route": "iot",
+                  "project_content": {
+                    "section1": [
+                      {
+                        "image": "schematic.jpg",
+                        "title": "Eureka Moment!",
+                        "text": {
+                          "paragraph1": "Interestingly enough, the vision for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
+                        }
+                      },
+                      {
+                        "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
+                        "title": "WS2811 Addressable LEDs",
+                        "text": {
+                          "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "project_name": "Call Log Management Center using PHP & MySQL",
+                  "project_icon": "fas fa-database",
+                  "project_card_image_url": "phpsql.png",
+                  "project_description": "This is a test description text.  More text. more more more text.",
+                  "route": "clmc",
+                  "project_content": {
+                    "section1": [
+                      {
+                        "image": "schematic.jpg",
+                        "title": "Eureka Moment!",
+                        "text": {
+                          "paragraph1": "Interestingly enough, the vision for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
+                        }
+                      },
+                      {
+                        "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
+                        "title": "WS2811 Addressable LEDs",
+                        "text": {
+                          "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        }
+                      }
+                    ]
+                  }
                 }
-              },
-              {
-                "project_name": "IoT: Remote Power Switch using ESP Microprocessor",
-                "project_icon": "fas fa-wifi",
-                "project_card_image_url": "https://s26913.pcdn.co/wp-content/uploads/2017/07/AdobeStock_133171498-1024x576.jpeg",
-                "project_description": "This is a test description text.  More text. more more more text.",
-                "route": "iot",
-                "project_content": {
-                  "section1": "Content for section 1",
-                  "section2": "Content for section 2"
-                }
-              },
-              {
-                "project_name": "Call Log Management Center using PHP & MySQL",
-                "project_icon": "fas fa-database",
-                "project_card_image_url": "phpsql.png",
-                "project_description": "This is a test description text.  More text. more more more text.",
-                "route": "clmc",
-                "project_content": {
-                  "section1": "Content for section 1",
-                  "section2": "Content for section 2"
-                }
-              }
-          ],
-          "past": [
+            ]
+          },
+          "past": {
+            "title": "Past Projects",
+            "description": "A look at some of my older work.",
+            "projects": [
               {
                 "project_name": "SLAM Drone using Image Processing",
                 "project_icon": "fas fa-helicopter",
@@ -64,8 +119,22 @@
                 "project_description": "This is a test description text.  More text. more more more text.",
                 "route": "slam",
                 "project_content": {
-                  "section1": "Content for section 1",
-                  "section2": "Content for section 2"
+                  "section1": [
+                    {
+                      "image": "schematic.jpg",
+                      "title": "Eureka Moment!",
+                      "text": {
+                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                      }
+                    },
+                    {
+                      "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
+                      "title": "WS2811 Addressable LEDs",
+                      "text": {
+                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                      }
+                    }
+                  ]
                 }
               },
               {
@@ -75,8 +144,22 @@
                 "project_description": "This is a test description text.  More text. more more more text.",
                 "route": "wildwest",
                 "project_content": {
-                  "section1": "Content for section 1",
-                  "section2": "Content for section 2"
+                  "section1": [
+                    {
+                      "image": "schematic.jpg",
+                      "title": "Eureka Moment!",
+                      "text": {
+                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                      }
+                    },
+                    {
+                      "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
+                      "title": "WS2811 Addressable LEDs",
+                      "text": {
+                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                      }
+                    }
+                  ]
                 }
               },
               {
@@ -86,10 +169,25 @@
                 "project_description": "This is a test description text.  More text. more more more text.",
                 "route": "bluetooth",
                 "project_content": {
-                  "section1": "Content for section 1",
-                  "section2": "Content for section 2"
+                  "section1": [
+                    {
+                      "image": "schematic.jpg",
+                      "title": "Eureka Moment!",
+                      "text": {
+                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                      }
+                    },
+                    {
+                      "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
+                      "title": "WS2811 Addressable LEDs",
+                      "text": {
+                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                      }
+                    }
+                  ]
                 }
               }
           ]
+        }
       }
 }
