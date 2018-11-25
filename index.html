@@ -23,21 +23,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer;">
-                  Current Projects
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a ng-repeat="project in vm.projectData.current.projects" ng-click="vm.changePage(project);" data-toggle="collapse" class="dropdown-item" style="font-size:.7em;cursor:pointer;">{{project.project_name}}</a>
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer;">
-                  Past Projects
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a ng-repeat="project in vm.projectData.past.projects" ng-click="vm.changePage(project);" class="dropdown-item" style="font-size:.7em;cursor:pointer;">{{project.project_name}}</a>
-                </div>
+            <li class="nav-item dropdown" ng-repeat="currentOrPreviousProjects in vm.projectData">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor:pointer;" ng-bind="currentOrPreviousProjects.title">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a ng-repeat="project in currentOrPreviousProjects.projects" ng-click="vm.changePage(project);" data-toggle="collapse" class="dropdown-item" style="font-size:.7em;cursor:pointer;" ng-bind="project.project_name"></a>
+              </div>
             </li>
             <li class="nav-item">
               <a class="nav-link">About Me</a>
