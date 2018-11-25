@@ -33,7 +33,7 @@
                   "project_name": "Front-End Development using Modern Frameworks",
                   "project_icon": "fab fa-angular",
                   "project_card_image_url": "http://www.olomweb.com/wp-content/uploads/2018/02/html-css-javascript-1024x576.jpg",
-                  "project_description": "Using dynamic web pages to deliver full-featured services that turn data into digestible information.",
+                  "project_description": "Using dynamic web pages to deliver full-featured services, turning data into digestible information.",
                   "route": "webdev",
                   "project_content": {
                     "section1": [
@@ -60,22 +60,23 @@
                   "project_name": "IoT: Remote Power Switch using ESP Microprocessor",
                   "project_icon": "fas fa-wifi",
                   "project_card_image_url": "https://s26913.pcdn.co/wp-content/uploads/2017/07/AdobeStock_133171498-1024x576.jpeg",
-                  "project_description": "This is a test description text.  More text. more more more text.",
+                  "project_description": "Using a Quarter-sized microprocessor to power my desk lamp from any other internet-connected device.",
                   "route": "iot",
                   "project_content": {
                     "section1": [
                       {
-                        "image": "schematic.jpg",
-                        "title": "Eureka Moment!",
+                        "image": "",
+                        "title": "Why?",
                         "text": {
-                          "paragraph1": "Interestingly enough, the vision for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
+                          "paragraph1": "I had always wanted to build my own website but never really had much reason to until I was approached by a local business to fix a slow database based off of Microsoft Access. In response to their slow database, I opted to build a new database using that would use SQL on the back-end and be presented to the user as a webpage. The advantage of this is that the users no longer had to use a specific computer and were able to enter and view data using any computer on the local intranet, and if desired, from the internet. From this, I ended up picking PHP, SQL, and some CSS to add to my repertoire."
                         }
                       },
                       {
-                        "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
-                        "title": "WS2811 Addressable LEDs",
+                        "image": "",
+                        "title": "PHP & SQL",
                         "text": {
-                          "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                          "paragraph1": "Data manipulation was made possible with the persistance that PHP can carry across browser windows during a user's session. Without PHP, I wouldn't have been able to implement a strong input validation system. A strong input validation system is necessary because the entries must go in correctly so that they may be sorted and displayed correctly. Another important factor was the elimination of SQL injection. Input validation was the most difficult part of the design, but proved well because it ensured a correct entry and a way for users to correct their inputs.",
+                          "paragraph2": "The combination of PHP and SQL made it possible to implement a strong user/password login system so that entries may be logged by user as well. With PHP's built in hashing functions, a user's hashed password can be securely stored on the database without exposing the password itself and used again to verify a match for future logins."
                         }
                       }
                     ]
@@ -85,22 +86,23 @@
                   "project_name": "Call Log Management Center using PHP & MySQL",
                   "project_icon": "fas fa-database",
                   "project_card_image_url": "phpsql.png",
-                  "project_description": "This is a test description text.  More text. more more more text.",
+                  "project_description": "My very first foray into data-driven web-design, without JavaScript!",
                   "route": "clmc",
                   "project_content": {
                     "section1": [
                       {
-                        "image": "schematic.jpg",
-                        "title": "Eureka Moment!",
+                        "image": "",
+                        "title": "Why?",
                         "text": {
-                          "paragraph1": "Interestingly enough, the vision for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
+                          "paragraph1": "I had always wanted to build my own website but never really had much reason to until I was approached by a local business to fix a slow database based off of Microsoft Access. In response to their slow database, I opted to build a new database using that would use SQL on the back-end and be presented to the user as a webpage. The advantage of this is that the users no longer had to use a specific computer and were able to enter and view data using any computer on the local intranet, and if desired, from the internet. From this, I ended up picking PHP, SQL, and some CSS to add to my repertoire."
                         }
                       },
                       {
-                        "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
-                        "title": "WS2811 Addressable LEDs",
+                        "image": "",
+                        "title": "PHP & SQL",
                         "text": {
-                          "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                          "paragraph1": "Data manipulation was made possible with the persistance that PHP can carry across browser windows during a user's session. Without PHP, I wouldn't have been able to implement a strong input validation system. A strong input validation system is necessary because the entries must go in correctly so that they may be sorted and displayed correctly. Another important factor was the elimination of SQL injection. Input validation was the most difficult part of the design, but proved well because it ensured a correct entry and a way for users to correct their inputs.",
+                          "paragraph2": "The combination of PHP and SQL made it possible to implement a strong user/password login system so that entries may be logged by user as well. With PHP's built in hashing functions, a user's hashed password can be securely stored on the database without exposing the password itself and used again to verify a match for future logins."
                         }
                       }
                     ]
@@ -116,22 +118,37 @@
                 "project_name": "SLAM Drone using Image Processing",
                 "project_icon": "fas fa-helicopter",
                 "project_card_image_url": "http://www.chartseo.com/wp-content/uploads/2018/02/Neurala-SDK-for-Drones-Image-1024x576.jpg",
-                "project_description": "This is a test description text.  More text. more more more text.",
+                "project_description": "Senior Project 2018, California State University - Fresno",
                 "route": "slam",
                 "project_content": {
                   "section1": [
                     {
-                      "image": "schematic.jpg",
-                      "title": "Eureka Moment!",
+                      "image": "",
+                      "title": "Introduction",
                       "text": {
-                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        "paragraph1": "As our senior design project, our group chose to go with using a SLAM algorithm and putting it onto a drone. From there, deep learning is implemented so that it may navigate with a sense of 'intuition' and make a best-case decision based on training data.",
+                        "paragraph2": "This project was the culmination of the education we have received throughout our time at California State University, Fresno and was presented for Fresno State Projects Day 2018 in May."
                       }
-                    },
+                    }
+                  ],
+                  "section2": [
                     {
-                      "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
-                      "title": "WS2811 Addressable LEDs",
+                      "image": "",
+                      "title": "Synopsis",
                       "text": {
-                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        "paragraph1": "Our group has been in the making for some time now - we all like drones, computers, and automation. We figured we can put a lot of these together by putting it all in a neat package that would integrate drones, navigation, and machine/deep learning. We want this project not to be too easy as to complete in a short amount of time but also not too hard that it's just not feasible. After attending to a Drone Conference in Las Vegas and watching presentation, we set our minds on creating something similar.",
+                        "paragraph2": "Taking Jetson's super-computing abilities and coupling them with Intel's RealSense, we would like to create a fully autonomous drone that can operate in given environment while mapping it's location at the same time. We'd like to start in 2D, using a ground-based rover and then add a dimension by using a flying drone.",
+                        "paragraph3": "It was a year long project that wrapped up our education as undergraduate students that goes further than just putting a couple of sensors together and calling it a day. It was a culmination of all of our skills, united to create something amazing."
+                      }
+                    }
+                  ],
+                  "section3": [
+                    {
+                      "image": "",
+                      "title": "Youtube Video Goes Here",
+                      "youtube_url": "",
+                      "text": {
+                        "paragraph1": "Youtube video goes here."
                       }
                     }
                   ]
@@ -141,22 +158,24 @@
                 "project_name": "Wild West Shootout Game using PIC Microcontroller and LED Strip",
                 "project_icon": "fas fa-laptop-code",
                 "project_card_image_url": "https://media.bizj.us/view/img/337711/microchip*1024xx1500-844-0-77.jpg",
-                "project_description": "This is a test description text.  More text. more more more text.",
+                "project_description": "Making a fun game using an LED Strip and a few microcontrollers.",
                 "route": "wildwest",
                 "project_content": {
                   "section1": [
                     {
-                      "image": "schematic.jpg",
-                      "title": "Eureka Moment!",
+                      "image": "",
+                      "title": "Welcome to the Wild West!",
                       "text": {
-                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        "paragraph1": "Back in Spring of 2015, a group of 2 colleagues and I were tasked to make a project out of a PIC microcontroller. At the time, addressable LEDs where relatively new along with the ESP8266 WiFi-enabled microcontroller. We thought amongst ourselves and decided, why not make a game out of this? It took a while to do all of this and I'm more than glad that I paired up with Adam and Nick - we all carried the same passion for this project.",
+                        "paragraph2": "After a some hundreds of lines of code in assembly (our 56 page report was roughly 44 pages of code), we successfully demonstrated a fun game in which two players would 'face off' and whoever 'shot' first would win."
                       }
                     },
                     {
-                      "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
-                      "title": "WS2811 Addressable LEDs",
+                      "image": "",
+                      "title": "Youtube Video Goes Here",
+                      "youtube_url": "",
                       "text": {
-                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        "paragraph1": "Youtube video goes here."
                       }
                     }
                   ]
@@ -166,22 +185,25 @@
                 "project_name": "DC Isolated Bluetooth Audio Adapter",
                 "project_icon": "fab fa-bluetooth-b",
                 "project_card_image_url": "https://hdwallpaper20.com/wp-content/uploads/data/2018/4/5/Blue-Gray-Wallpaper-PIC-HWB439733-1024x576.jpg",
-                "project_description": "This is a test description text.  More text. more more more text.",
+                "project_description": "A technology refresh update from using wired auxiliary to the convenience of Bluetooth.",
                 "route": "bluetooth",
                 "project_content": {
                   "section1": [
                     {
-                      "image": "schematic.jpg",
-                      "title": "Eureka Moment!",
+                      "image": "",
+                      "title": "Much Needed Bluetooth Upgrades",
                       "text": {
-                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        "paragraph1": "This project came about when I decided to install a Bluetooth module into my car. After using an auxiliary audio cord for so long, I wanted to make the jump to the convenience of Bluetooth. I particularly enjoyed using my current head-unit as it offered great sound and very reasonable power, so I didn't want to swap it out since the only extra feature I wanted was wireless audio.",
+                        "paragraph2": "After installing the Bluetooth adapter and powering it with the car's 12v power, there was an audible hum whenever it was used. Using a volt-meter, I found some stray voltage between audio ground and the 12v supply ground: A classic ground-loop. I tried to alleviate the ground-loop that was present in the system by using audio isolators (AKA, some mini-transformers) but was not happy with the result because the audio reaching the head-unit was noticeably muted. It sounded like the music was being played over a low-quality stream.",
+                        "paragraph3": "Unsatisfied with both approaches, I integrated a relay system that would disconnect the bluetooth adapter from the car's 12v power when the car is turned on and switch over to it's own battery supply. This isolation lets the Bluetooth module exchange the audio signal without the worry of a ground-loop or the use of audio isolators.",
+                        "paragraph4": "When the keys are in the off position, the relay system switches back over to connect the car's 12v power so that a charge controller recharges the lithium battery pack. This method also gave me a way to turn the module on/off with the car so that it connects/disconnects from my phone when appropriate."
                       }
                     },
                     {
-                      "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
-                      "title": "WS2811 Addressable LEDs",
+                      "image": "",
+                      "title": "Results",
                       "text": {
-                        "paragraph1": "The concept of addressable LEDs was still a brand new idea that became cheap enough to reach consumers. Shortly after my involvement with the Wild West Shootout Game, I just couldn't get enough of these things and thought to myself, what if the same idea was applied to 10-, 30-, 50-, or even 100-watt LEDs? So, using a little circuit know-how, I prototyped a controllable 50-watt RGB LED."
+                        "paragraph1": "Blurb about results"
                       }
                     }
                   ]
