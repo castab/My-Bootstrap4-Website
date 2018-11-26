@@ -117,7 +117,7 @@
               {
                 "project_name": "SLAM Drone using Image Processing",
                 "project_icon": "fas fa-helicopter",
-                "project_card_image_url": "http://www.chartseo.com/wp-content/uploads/2018/02/Neurala-SDK-for-Drones-Image-1024x576.jpg",
+                "project_card_image_url": "slam.jpg",
                 "project_description": "Senior Project 2018, California State University - Fresno",
                 "route": "slam",
                 "project_content": {
@@ -145,10 +145,10 @@
                   "section3": [
                     {
                       "image": "",
-                      "title": "Youtube Video Goes Here",
-                      "youtube_url": "",
+                      "title": "",
+                      "youtube_url": "https://www.youtube.com/embed/03r56SdhQwA",
                       "text": {
-                        "paragraph1": "Youtube video goes here."
+                        "paragraph1": "Presentation video for display during Projects Day for Fresno State Lyle's College of Engineering."
                       }
                     }
                   ]
@@ -172,10 +172,10 @@
                     },
                     {
                       "image": "",
-                      "title": "Youtube Video Goes Here",
-                      "youtube_url": "",
+                      "title": "",
+                      "youtube_url": "https://www.youtube.com/embed/QqMgE-rRKb4?start=295",
                       "text": {
-                        "paragraph1": "Youtube video goes here."
+                        "paragraph1": "Sit back and enjoy a feature presentation."
                       }
                     }
                   ]

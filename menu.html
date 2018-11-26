@@ -7,8 +7,8 @@
     </div>
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div ng-repeat="project in currentOrPreviousProjects.projects" class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="margin-bottom:5px;">
-                    <div class="card mb-4 shadow-sm" ng-cloak ng-click="vm.changePage(project);">
+            <div ng-cloak ng-repeat="project in currentOrPreviousProjects.projects" class="col-sm-12 col-md-6 col-lg-4 col-xl-4" style="margin-bottom:5px;">
+                    <div class="card mb-4 shadow-sm" ng-click="vm.changePage(project);">
                         <img class="card-img-top" ng-src="{{project.project_card_image_url}}">
                         <div class="card-body">
                         <h6 class="card-title d-flex flex-row justify-content-between align-items-start">

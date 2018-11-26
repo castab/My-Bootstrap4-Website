@@ -64,21 +64,6 @@ body {
         -webkit-transform: translateY(0%);
     }
 }
-.ng-enter {
-    /* The name of the animation */
-    animation-name: scale-in-ver-top;
-    -webkit-animation-name: scale-in-ver-top; 
-    /* The duration of the animation */
-    animation-duration: 1s;
-    backface-visibility: hidden;
-    -webkit-animation-duration: 1s;
-    -webkit-backface-visibility: hidden;
-    /* Make the element visible */
-}
-/* This is causing long load times
-/* .ng-enter-active {
-    opacity: 0;
-} */
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
     display: none !important;
 }
