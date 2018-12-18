@@ -7,13 +7,13 @@
               {
                   "project_name": "Addressable High-Power RGBLEDs",
                   "project_icon": "fas fa-sun",
-                  "project_card_image_url": "ledstrip.jpg",
+                  "project_card_image_url": "../images/ledstrip.jpg",
                   "project_description": "Scaling the addressability of LEDs to their high-powered versions.",
                   "route": "rgbleds",
                   "project_content": {
                     "section1": [
                       {
-                        "image": "schematic.jpg",
+                        "image": "../images/schematic.jpg",
                         "title": "Eureka Moment!",
                         "text": {
                           "paragraph1": "Interestingly enough, the inspiration for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
@@ -32,13 +32,13 @@
                 {
                   "project_name": "Front-End Development using Modern Frameworks",
                   "project_icon": "fab fa-angular",
-                  "project_card_image_url": "http://www.olomweb.com/wp-content/uploads/2018/02/html-css-javascript-1024x576.jpg",
+                  "project_card_image_url": "http://blog.alakmalak.com/wp-content/uploads/2015/02/html5-web-applications-by-ewaycorp-1024x576.jpg",
                   "project_description": "Using dynamic web pages to deliver full-featured services, turning data into digestible information.",
                   "route": "webdev",
                   "project_content": {
                     "section1": [
                       {
-                        "image": "schematic.jpg",
+                        "image": "../images/schematic.jpg",
                         "title": "The Beginnings",
                         "text": {
                           "paragraph1": "My very first experience with any kind of web development came from tinkering around with the ESP8266 WiFi-enabled microcontroller. Before I knew what APIs were (much less, write an API), my default interface with the microcontroller was a very simple website that included a simple dialog and a drop-down box that would turn one of its IO pins HIGH or LOW; triggering an attached relay.",
@@ -85,7 +85,7 @@
                 {
                   "project_name": "Call Log Management Center using PHP & MySQL",
                   "project_icon": "fas fa-database",
-                  "project_card_image_url": "phpsql.png",
+                  "project_card_image_url": "../images/phpsql.png",
                   "project_description": "My very first foray into data-driven web-design, without JavaScript!",
                   "route": "clmc",
                   "project_content": {
@@ -117,7 +117,7 @@
               {
                 "project_name": "SLAM Drone using Image Processing",
                 "project_icon": "fas fa-helicopter",
-                "project_card_image_url": "slam.jpg",
+                "project_card_image_url": "../images/slam.jpg",
                 "project_description": "Senior Project 2018, California State University - Fresno",
                 "route": "slam",
                 "project_content": {

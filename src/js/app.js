@@ -104,7 +104,7 @@
                 defer.resolve(vm.projectData);
             } else {
                 // Data has not been loaded, fetch it
-                $http.get('data.json').then(
+                $http.get('../data/data.json').then(
                     function(resp) {
                         vm.projectData = resp.data.projects;
                         vm.currentProject = vm.projectData.current.projects[0];
