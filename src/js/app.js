@@ -34,7 +34,7 @@
 
         $rootScope.$on('$routeChangeSuccess', function() {
             var slash = '/';
-            // This doesn't need to run on the /menu or / pages
+            // This doesn't need to run on the '/menu' or '/' pages
             if (!($location.path() == '/menu' || $location.path() == '/')) {
                 // Need to evaluate what project should be loaded
                 // Check if vm.projectData has content
@@ -156,11 +156,11 @@
             }
         }
     }])
-    .filter('trustUrl', function($sce) {
+    .filter('trustUrl', ['$sce', function($sce) {
         return function(url) {
             return $sce.trustAsResourceUrl(url);
         }
-    })
+    }])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider
         .when("/", {

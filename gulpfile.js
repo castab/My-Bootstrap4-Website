@@ -64,13 +64,21 @@ gulp.task('html', gulp.series('images', function() {
         'js': '../js/main.js',
         'css': '../css/main.css'
       }))
-    page = page.pipe(htmlclean());
-
-
-
-  
+    page = page.pipe(htmlclean());  
     return page.pipe(gulp.dest(out));
 }));
+
+// JSON processing
+gulp.task('json', function() {
+  var json = gulp.src(folder.src + 'data/**/*');
+  return json.pipe(gulp.dest(folder.build + 'data/'));
+});
+
+// Fontawesome fonts copy
+gulp.task('fonts', function() {
+  var fonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*');
+  return fonts.pipe(gulp.dest(folder.build + 'webfonts/'));
+})
 
 // JavaScript processing
 gulp.task('js', function() {
@@ -97,6 +105,7 @@ gulp.task('js', function() {
   
   });
 
+  // CSS processing
   gulp.task('css', gulp.series('images', function() {
     var cssbuild =  gulp.src([
     './node_modules/bootstrap/dist/css/bootstrap.css',
@@ -107,4 +116,4 @@ gulp.task('js', function() {
     return cssbuild.pipe(gulp.dest(folder.build + 'css/'));
   }));
 
-  gulp.task('build', gulp.series(['html', 'css', 'js']));
+  gulp.task('build', gulp.series(['html', 'css', 'js', 'json', 'fonts']));

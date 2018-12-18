@@ -32,7 +32,7 @@
                 {
                   "project_name": "Front-End Development using Modern Frameworks",
                   "project_icon": "fab fa-angular",
-                  "project_card_image_url": "http://blog.alakmalak.com/wp-content/uploads/2015/02/html5-web-applications-by-ewaycorp-1024x576.jpg",
+                  "project_card_image_url": "../images/frontend.jpg",
                   "project_description": "Using dynamic web pages to deliver full-featured services, turning data into digestible information.",
                   "route": "webdev",
                   "project_content": {
@@ -59,7 +59,7 @@
                 {
                   "project_name": "IoT: Remote Power Switch using ESP Microprocessor",
                   "project_icon": "fas fa-wifi",
-                  "project_card_image_url": "https://s26913.pcdn.co/wp-content/uploads/2017/07/AdobeStock_133171498-1024x576.jpeg",
+                  "project_card_image_url": "../images/iot.jpg",
                   "project_description": "Using a Quarter-sized microprocessor to power my desk lamp from any other internet-connected device.",
                   "route": "iot",
                   "project_content": {
@@ -157,7 +157,7 @@
               {
                 "project_name": "Wild West Shootout Game using PIC Microcontroller and LED Strip",
                 "project_icon": "fas fa-laptop-code",
-                "project_card_image_url": "https://media.bizj.us/view/img/337711/microchip*1024xx1500-844-0-77.jpg",
+                "project_card_image_url": "../images/microchip.jpg",
                 "project_description": "Making a fun game using an LED Strip and a few microcontrollers.",
                 "route": "wildwest",
                 "project_content": {
@@ -184,8 +184,8 @@
               {
                 "project_name": "DC Isolated Bluetooth Audio Adapter",
                 "project_icon": "fab fa-bluetooth-b",
-                "project_card_image_url": "https://hdwallpaper20.com/wp-content/uploads/data/2018/4/5/Blue-Gray-Wallpaper-PIC-HWB439733-1024x576.jpg",
-                "project_description": "A technology refresh update from using wired auxiliary to the convenience of Bluetooth.",
+                "project_card_image_url": "../images/bluetooth.jpg",
+                "project_description": "A technology upgrade from using wired auxiliary to the convenience of Bluetooth.",
                 "route": "bluetooth",
                 "project_content": {
                   "section1": [
