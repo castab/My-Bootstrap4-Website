@@ -7,6 +7,7 @@
         vm.buttonClicked = false;
         vm.projectData = {};
         vm.introComplete = false;
+        vm.introSlide = 'slide';
 
         vm.click = function() {
             vm.exists = false;
@@ -36,6 +37,7 @@
             var slash = '/';
             // This doesn't need to run on the /menu or / pages
             if (!($location.path() == '/menu' || $location.path() == '/')) {
+                vm.introSlide = '';
                 // Need to evaluate what project should be loaded
                 // Check if vm.projectData has content
                 if (vm.projectData.current) {
@@ -54,6 +56,8 @@
                         })
                     }
                 }
+            } else if ($location.path() == "/") {
+                vm.introSlide = 'slide';
             }
         });
 
