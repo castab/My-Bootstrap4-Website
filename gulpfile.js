@@ -40,7 +40,7 @@ gulp.task('serve-dev', function() {
         server: {
             baseDir: "./"
         },
-        startPath: "src/html/"
+        startPath: "src/"
     });
     gulp.watch("src/**/*").on("change", reload);
 });
@@ -49,20 +49,20 @@ gulp.task('serve-build', function() {
       server: {
           baseDir: "./"
       },
-      startPath: "build/html/"
+      startPath: "build/"
   });
   gulp.watch("build/**/*").on("change", reload);
 });
 
 // HTML processing
 gulp.task('html', gulp.series('images', function() {
-    var
-      out = folder.build + 'html/',
-      page = gulp.src(folder.src + 'html/**/*')
+
+  var out = folder.build;
+  var page = gulp.src(folder.src + '*.html')
         .pipe(newer(out));
     page = page.pipe(replace({
-        'js': '../js/main.js',
-        'css': '../css/main.css'
+        'js': './js/main.js',
+        'css': './css/main.css'
       }))
     page = page.pipe(htmlclean());  
     return page.pipe(gulp.dest(out));

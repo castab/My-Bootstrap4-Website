@@ -7,13 +7,13 @@
               {
                   "project_name": "Addressable High-Power RGBLEDs",
                   "project_icon": "fas fa-sun",
-                  "project_card_image_url": "../images/ledstrip.jpg",
+                  "project_card_image_url": "./images/ledstrip.jpg",
                   "project_description": "Scaling the addressability of LEDs to their high-powered versions.",
                   "route": "rgbleds",
                   "project_content": {
                     "section1": [
                       {
-                        "image": "../images/schematic.jpg",
+                        "image": "./images/schematic.jpg",
                         "title": "Eureka Moment!",
                         "text": {
                           "paragraph1": "Interestingly enough, the inspiration for this project came to me during a gathering with some of my colleagues. I remember watching the various decorations and colors... It occurred to me that I could use a MOSFET to control the current flow of a higher voltage source using a low voltage PWM signal. The idea was just too good to let go from my mind so I scribbled notes on one of the napkins!"
@@ -32,26 +32,40 @@
                 {
                   "project_name": "Front-End Development using Modern Frameworks",
                   "project_icon": "fab fa-angular",
-                  "project_card_image_url": "../images/frontend.jpg",
+                  "project_card_image_url": "./images/frontend.jpg",
                   "project_description": "Using dynamic web pages to deliver full-featured services, turning data into digestible information.",
                   "route": "webdev",
                   "project_content": {
                     "section1": [
                       {
-                        "image": "../images/schematic.jpg",
                         "title": "The Beginnings",
                         "text": {
                           "paragraph1": "My very first experience with any kind of web development came from tinkering around with the ESP8266 WiFi-enabled microcontroller. Before I knew what APIs were (much less, write an API), my default interface with the microcontroller was a very simple website that included a simple dialog and a drop-down box that would turn one of its IO pins HIGH or LOW; triggering an attached relay.",
                           "paragraph2": "Fast-forwarding to a crazy summer, I stumbled upon Lynda.com and found a beginner's course on PHP! By the end of the summer, I was taken back with what could be done with a little bit of server-side processing and some persistant storage such as SQL.",
                           "paragraph3": "Over time, I picked up a good chunk of HTML and CSS, but I would have to say that my biggest leap was my internship with Target. Throughout my internship, I picked up AngularJS and I couldn't believe how far behind I was with respect to data/session binding. To drive this further, AngularJS isn't even one of the most recent frameworks!"
                         }
-                      },
+                      }
+                    ],
+                    "section2": [
                       {
-                        "image": "https://cdn-shop.adafruit.com/1200x900/2561-00.jpg",
                         "title": "Student of the Web",
                         "text": {
                           "paragraph1": "I've always wondered how some websites just make their websites look just so outstandingly good! All I needed was a little push to see that it really is some heavy CSS'ing with JavaScript handling the reigns. Aside from this website, you can check out some of my other work:"
                         }
+                      }
+                    ],
+                    "section3": [
+                      {
+                        "image": "./images/web3.jpg",
+                        "text": [
+                          "A website for my Dad's trucking company."
+                        ]
+                      },
+                      {
+                        "image": "./images/web2.jpg",
+                        "text": [
+                          "Using PHP as an endpoint to feed this website current weather information."
+                        ]
                       }
                     ]
                   }
@@ -59,24 +73,16 @@
                 {
                   "project_name": "IoT: Remote Power Switch using ESP Microprocessor",
                   "project_icon": "fas fa-wifi",
-                  "project_card_image_url": "../images/iot.jpg",
+                  "project_card_image_url": "./images/iot.jpg",
                   "project_description": "Using a Quarter-sized microprocessor to power my desk lamp from any other internet-connected device.",
                   "route": "iot",
                   "project_content": {
                     "section1": [
                       {
                         "image": "",
-                        "title": "Why?",
+                        "title": "Coming Soon",
                         "text": {
-                          "paragraph1": "I had always wanted to build my own website but never really had much reason to until I was approached by a local business to fix a slow database based off of Microsoft Access. In response to their slow database, I opted to build a new database using that would use SQL on the back-end and be presented to the user as a webpage. The advantage of this is that the users no longer had to use a specific computer and were able to enter and view data using any computer on the local intranet, and if desired, from the internet. From this, I ended up picking PHP, SQL, and some CSS to add to my repertoire."
-                        }
-                      },
-                      {
-                        "image": "",
-                        "title": "PHP & SQL",
-                        "text": {
-                          "paragraph1": "Data manipulation was made possible with the persistance that PHP can carry across browser windows during a user's session. Without PHP, I wouldn't have been able to implement a strong input validation system. A strong input validation system is necessary because the entries must go in correctly so that they may be sorted and displayed correctly. Another important factor was the elimination of SQL injection. Input validation was the most difficult part of the design, but proved well because it ensured a correct entry and a way for users to correct their inputs.",
-                          "paragraph2": "The combination of PHP and SQL made it possible to implement a strong user/password login system so that entries may be logged by user as well. With PHP's built in hashing functions, a user's hashed password can be securely stored on the database without exposing the password itself and used again to verify a match for future logins."
+                          "paragraph1": "Check back later."
                         }
                       }
                     ]
@@ -85,7 +91,7 @@
                 {
                   "project_name": "Call Log Management Center using PHP & MySQL",
                   "project_icon": "fas fa-database",
-                  "project_card_image_url": "../images/phpsql.png",
+                  "project_card_image_url": "./images/phpsql.png",
                   "project_description": "My very first foray into data-driven web-design, without JavaScript!",
                   "route": "clmc",
                   "project_content": {
@@ -105,6 +111,63 @@
                           "paragraph2": "The combination of PHP and SQL made it possible to implement a strong user/password login system so that entries may be logged by user as well. With PHP's built in hashing functions, a user's hashed password can be securely stored on the database without exposing the password itself and used again to verify a match for future logins."
                         }
                       }
+                    ],
+                    "section2": [
+                      {
+                        "image": "./images/clmc1.jpg",
+                        "title": "",
+                        "text": {
+                          "paragraph1": "Login landing page."
+                        }
+                      },
+                      {
+                        "image": "./images/clmc2.jpg",
+                        "title": "",
+                        "text": {
+                          "paragraph1": "What's my password again?"
+                        }
+                      }
+                    ],
+                    "section3": [
+                      {
+                        "image": "./images/clmc3.jpg",
+                        "title": "",
+                        "text": {
+                          "paragraph1": "After logging in, the menu changes to reflect read/write privileges."
+                        }
+                      },
+                      {
+                        "image": "./images/clmc4.jpg",
+                        "title": "",
+                        "text": {
+                          "paragraph1": "A table view of recent entries. Clicking on an entry's date takes you to an edit form for that entry."
+                        }
+                      }
+                    ],
+                    "section4": [
+                      {
+                        "image": "./images/clmc5.jpg",
+                        "title": "",
+                        "text": {
+                          "paragraph1": "An edit form for an entry."
+                        }
+                      },
+                      {
+                        "image": "./images/clmc6.jpg",
+                        "title": "",
+                        "text": {
+                          "paragraph1": "HTML5 helps with some form validation but the input is still validated right before entering storage."
+                        }
+                      }
+                    ],
+                    "section5": [
+                      {
+                        "image": "./images/clmc7.jpg",
+                        "title": "",
+                        "text": {
+                          "paragraph1": "A peek into the code.  Over security concern, this project will not be published for public view since it is live and in use.  Although, I'm completely open to talking about it in person!"
+                        }
+                      }
                     ]
                   }
                 }
@@ -117,7 +180,7 @@
               {
                 "project_name": "SLAM Drone using Image Processing",
                 "project_icon": "fas fa-helicopter",
-                "project_card_image_url": "../images/slam.jpg",
+                "project_card_image_url": "./images/slam.jpg",
                 "project_description": "Senior Project 2018, California State University - Fresno",
                 "route": "slam",
                 "project_content": {
@@ -157,7 +220,7 @@
               {
                 "project_name": "Wild West Shootout Game using PIC Microcontroller and LED Strip",
                 "project_icon": "fas fa-laptop-code",
-                "project_card_image_url": "../images/microchip.jpg",
+                "project_card_image_url": "./images/microchip.jpg",
                 "project_description": "Making a fun game using an LED Strip and a few microcontrollers.",
                 "route": "wildwest",
                 "project_content": {
@@ -184,7 +247,7 @@
               {
                 "project_name": "DC Isolated Bluetooth Audio Adapter",
                 "project_icon": "fab fa-bluetooth-b",
-                "project_card_image_url": "../images/bluetooth.jpg",
+                "project_card_image_url": "./images/bluetooth.jpg",
                 "project_description": "A technology upgrade from using wired auxiliary to the convenience of Bluetooth.",
                 "route": "bluetooth",
                 "project_content": {
@@ -203,8 +266,37 @@
                       "image": "",
                       "title": "Results",
                       "text": {
-                        "paragraph1": "Blurb about results"
+                        "paragraph1": "This enhancement has led to many years of wireless audio enjoyment!  Although not in immediate sights, I would like to design a dedicated circuit board and move away from using a dedicated battery solely for this system - I had no idea 5v to 5v isolated DC supplies in the form of a through-hole component existed when I was working on this project."
                       }
+                    }
+                  ],
+                  "section2": [
+                    {
+                      "image": "./images/bt1.jpg",
+                      "text": [
+                        "Prototype build to see if I can trigger on/off using the car's ignition trigger."
+                      ]
+                    },
+                    {
+                      "image": "./images/bt4.jpg",
+                      "text": [
+                        "Well, it worked up until it gave off some 'magic' smoke."
+                      ]
+                    },
+                    {
+                      "image": "./images/bt3.jpg",
+                      "text": [
+                        "Evolution into a relay + battery system with attached battery protection and charging board."
+                      ]
+                    }
+                  ],
+                  "section3": [
+                    {
+                      "image": "./images/bt2.jpg",
+                      "title": "",
+                      "text": [
+                        "Complete with a 4-channel relay for future additions."
+                      ]
                     }
                   ]
                 }
