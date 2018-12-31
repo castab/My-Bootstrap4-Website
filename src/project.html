@@ -5,7 +5,7 @@
   </div>
 </div>
 
-<div class="container-fluid" ng-repeat="section in vm.currentProject.project_content">
+<div class="container" ng-repeat="section in vm.currentProject.project_content">
   <div class="card-deck" style="margin-bottom: 25px;">
       <div ng-repeat="content in section" class="card mb-6 shadow-sm">
         <img class="card-img-top" ng-src="{{content.image}}">
