@@ -86,6 +86,27 @@
         })
 
     }])
+    .controller('preloadCtrl', [ '$scope', 'projectDataService', function($scope, projectDataService) {
+        var vm = {}; // Why does this break my intro page when I use 'vm = this' ?
+        $scope.vm = vm;
+        vm.imageUrls = [];
+
+        vm.prepareImageUrls = function() {
+            _.forEach(vm.projectData, function(currentOrPreviousProjects) {
+                _.forEach(currentOrPreviousProjects.projects, function(project) {
+                    vm.imageUrls.push(project.project_card_image_url);
+                })
+            })
+        }
+
+        projectDataService.getProjectData()
+        .then(function(resp) {
+            vm.projectData = resp;
+            vm.prepareImageUrls();
+        }, function(error) {
+            console.log("Failed to load preload project data")
+        })
+    }])
     .service('projectDataService', ['$http', '$location', '$q', function($http, $location, $q) {
         vm = this;
         vm.projectData = {};

@@ -57,6 +57,11 @@
 
 <div ng-controller="mainCtrl as vm" ng-view></div>
 
+<div ng-controller="preloadCtrl as vm" style="display:none;">
+  <div ng-repeat="url in vm.imageUrls">
+    <img ng-src="{{url}}">
+  </div>
+</div>
 
 </body>
 

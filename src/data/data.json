@@ -84,6 +84,12 @@
                         "text": {
                           "paragraph1": "Check back later."
                         }
+                      },
+                      {
+                        "image": "./images/iot1.jpg",
+                        "text": [
+                          "About as small as a quarter, the ESP8266 packs onboard WiFi and both a faster processor and more memory than most Arduino boards."
+                        ]
                       }
                     ]
                   }
