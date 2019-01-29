@@ -34,6 +34,7 @@
         });
 
         $rootScope.$on('$routeChangeSuccess', function() {
+            window.scrollTo(0,0);
             var slash = '/';
             // This doesn't need to run on the '/menu' or '/' pages
             if (!($location.path() == '/menu' || $location.path() == '/')) {
@@ -108,14 +109,13 @@
         })
     }])
     .service('projectDataService', ['$http', '$location', '$q', function($http, $location, $q) {
-        vm = this;
+        var vm = this;
         vm.projectData = {};
 
         vm.changePage = function(project) {
             vm.currentProject = project;
             $('.navbar-collapse').collapse('hide');
             $location.path(project.route);
-            window.scrollTo(0, 0);
         };
         vm.getCurrentProject = function() {
             if (vm.currentProject) {
