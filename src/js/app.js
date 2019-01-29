@@ -2,7 +2,7 @@
     angular.module('app', ['ngAnimate', 'ngRoute'])
     .controller('mainCtrl', ['$location', '$rootScope', 'projectDataService', function($location, $rootScope, projectDataService) {
 
-        vm = this;
+        var vm = this;
         vm.exists = true;
         vm.buttonClicked = false;
         vm.projectData = {};
@@ -63,9 +63,8 @@
         });
 
     }])
-    .controller('navbarCtrl', ['$scope', '$location', 'projectDataService', function($scope, $location, projectDataService) {
-        var vm = {};
-        $scope.vm = vm;
+    .controller('navbarCtrl', ['$location', 'projectDataService', function($location, projectDataService) {
+        var vm = this;
         vm.projectData = {};
 
         vm.isNavbarActive = function() {
@@ -88,8 +87,7 @@
 
     }])
     .controller('preloadCtrl', [ '$scope', 'projectDataService', function($scope, projectDataService) {
-        var vm = {}; // Why does this break my intro page when I use 'vm = this' ?
-        $scope.vm = vm;
+        var vm = this;
         vm.imageUrls = [];
 
         vm.prepareImageUrls = function() {
