@@ -308,6 +308,70 @@
                 }
               }
           ]
+        },
+        "about_me": {
+          "title": "About Me",
+          "description": "Putting a face behind the ideas.",
+          "projects": [
+            {
+              "project_name": "Brayan Castaneda",
+              "project_icon": "fas fa-user",
+              "project_card_image_url": "./images/aboutMe.jpg",
+              "project_description": "A curious recent undergrad with a keen interest in full-stack development.",
+              "route": "aboutme",
+              "project_content": {
+                "section1": [
+                  {
+                    "image": "./images/aboutMe.jpg",
+                    "text" : [
+                      "Spending the summer with Target in Minneapolis, Minnesota."
+                    ]
+                  }
+                ],
+                "section2": [
+                  {
+                    "title": "Why Engineering?",
+                    "text": [
+                      "I've worked retail for most of my working life and have come to find it unfulfilling. Yeah, it paid the bills and was relatively easy, but offered no real goal for me. I'm not talking about rising through management - I'm talking about growing intellectually and consciously. I enjoyed the company of my co-workers but after some time, the work became repetitive and always came to the bottom line. Don't get me wrong, the bottom line is important, but I feel like I had talents that I could put to much better use. I had my hobbies and have tried majoring in IT before, but now it was time to make good on my passion in my hobbies and get an Engineering degree.",
+                      "Only in these recent years, I've come to realize how blind I was to how the physical world works; I just can't believe how a couple years in school changed how I see and understand things! My biggest leap into enlightenment was the Fourier Transform and the power it possesses and seemingly endless applications. I could go on and on about the Fourier Transform as well as its close mathematical functions: the Laplace Transform and Z-Transform... but maybe for another time.",
+                      "Anyways... Fast forward a few years at California State University, Fresno, and I come out with a degree in Electrical Engineering with a minor in Computer Engineering! "
+                    ]
+                  }
+                ],
+                "section3": [
+                  {
+                    "image": "./images/pupper.jpg",
+                    "text": ["My pupper joining me on a trip."]
+                  },
+                  {
+                    "image": "./images/seattle.jpg",
+                    "text": ["Sight seeing in Seattle."]
+                  },
+                  {
+                    "image": "./images/vancouver.jpg",
+                    "text": ["Definitely have to return to Vancouver sometime."]
+                  }
+                ],
+                "section4": [
+                  {
+                    "title": "My Values",
+                    "text": [
+                      "I come from a family of immigrants; both my mom and dad came from Mexico in search of their own American Dream. Now, my parents are business-owners in a trucking company with a current fleet size of three and growing! Taking from my parents, I believe in hard work and the value of a person's word; even if a person has no money, they have inexpressible value in both their commitment to their work, and the strength of their word.",
+                      "I care deeply about all of those that are close to me, including my family, friends, and colleagues and will always try to help them just as they have helped me. The bonds that have been created throughout my years in college have become unbreakable and will be something I will never forget as we all split paths to follow our dreams."
+                    ]
+                  }
+                ],
+                "section5": [
+                  {
+                    "image": "./images/duck.jpg",
+                    "text": [
+                      "Celebrating the end of a tough semester at the local brewery, conveniently across the street from Campus."
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         }
       }
 }

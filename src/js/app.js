@@ -154,16 +154,6 @@
             }
         };
     }])
-    .run(['$http', '$templateCache', function($http, $templateCache) {
-        $http.get('menu.html').then(
-            function(resp) {
-                $templateCache.put('menu.html', resp.data);
-            },
-            function(error) {
-                console.log('Error caching menu.html');
-            }
-        );
-    }])
     .animation('.jqslide', [function() {
         return {
             enter: function(element, doneFn) {
@@ -213,6 +203,9 @@
             templateUrl: "project.html"
         })
         .when("/bluetooth", {
+            templateUrl: "project.html"
+        })
+        .when("/aboutme", {
             templateUrl: "project.html"
         })
         .otherwise( {
