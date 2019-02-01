@@ -29,6 +29,7 @@
         projectDataService.getProjectData()
         .then(function(resp) {
             vm.projectData = resp;
+            vm.currentProject = vm.projectData.current.projects[0];
         }, function(error) {
             console.log('There was an error fetching the data.');
         });
@@ -45,12 +46,13 @@
                     // Looks like content is loaded
                     // Check if current project and route match up
                     if (!(slash.concat(vm.currentProject.route) == $location.path())) {
-                        // Mismatch, get correct current project and load it
+                        // Mismatch, clear it so it doesn't show up on the page
+                        vm.currentProject = {};
+                        // Then get correct current project and load it
                         _.forEach(vm.projectData, function(currentOrPreviousProjects) {
                             _.forEach(currentOrPreviousProjects.projects, function(project) {
                                 if (slash.concat(project.route) == $location.path()) {
                                     vm.changePage(project);
-                                    // console.log('View corrected.')
                                     return false;
                                 }
                             })
@@ -152,6 +154,11 @@
             }
         };
     }])
+    .component('navbar', {
+        templateUrl: 'navbar.html',
+        controller: 'navbarCtrl',
+        controllerAs: 'vm'
+    })
     .animation('.jqslide', [function() {
         return {
             enter: function(element, doneFn) {
