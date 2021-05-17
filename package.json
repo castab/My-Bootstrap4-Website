@@ -22,11 +22,11 @@
     "angular-route": "^1.7.9",
     "bootstrap": "^4.4.1",
     "jquery": "^3.5.0",
-    "lodash": "^4.17.15"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
@@ -35,7 +35,6 @@
     "gulp-htmlclean": "^2.7.22",
     "gulp-imagemin": "^5.0.3",
     "gulp-newer": "^1.4.0",
-    "gulp-sass": "^4.0.2",
     "gulp-strip-debug": "^3.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-uglifycss": "^1.1.0"

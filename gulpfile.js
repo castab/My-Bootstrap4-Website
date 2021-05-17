@@ -15,8 +15,7 @@ var
   reload = browserSync.reload,
   replace = require('gulp-html-replace'),
   uglifycss = require('gulp-uglifycss'),
-  cleancss = require('gulp-clean-css'),
-  sass = require('gulp-sass'),
+  cleancss = require('gulp-clean-css')
 
 
   // folders
