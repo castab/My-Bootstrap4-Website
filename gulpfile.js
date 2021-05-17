@@ -1,119 +1,93 @@
-// Gulp.js configuration
-'use strict';
+const { src, dest, series, watch } = require('gulp')
+const htmlclean = require('gulp-htmlclean')
+const newer = require('gulp-newer')
+const replace = require('gulp-html-replace')
+const concat = require('gulp-concat')
+const cleancss = require('gulp-clean-css')
+const uglifycss = require('gulp-uglifycss')
+const uglify = require ('gulp-uglify')
+const imagemin = require('gulp-imagemin')
+const deporder = require('gulp-deporder')
+const stripdebug = require('gulp-strip-debug')
+const browserSync = require('browser-sync')
 
-var
-  // modules
-  gulp = require('gulp'),
-  newer = require('gulp-newer'),
-  imagemin = require('gulp-imagemin'),
-  browserSync = require('browser-sync'),
-  htmlclean = require('gulp-htmlclean'),
-  concat = require('gulp-concat'),
-  deporder = require('gulp-deporder'),
-  stripdebug = require('gulp-strip-debug'),
-  uglify = require('gulp-uglify'),
-  reload = browserSync.reload,
-  replace = require('gulp-html-replace'),
-  uglifycss = require('gulp-uglifycss'),
-  cleancss = require('gulp-clean-css')
-
-
-  // folders
-  folder = {
+const folder = {
     src: 'src/',
     build: 'build/'
-  }
-;
+}
 
-// image processing
-gulp.task('images', function() {
-    var out = folder.build + 'images/';
-    return gulp.src(folder.src + 'images/**/*')
-      .pipe(newer(out))
-      .pipe(imagemin({ optimizationLevel: 5 }))
-      .pipe(gulp.dest(out));
-  });
-
-// Static server
-gulp.task('serve-dev', function() {
+function servebuild() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: './'
         },
-        startPath: "src/"
-    });
-    gulp.watch("src/**/*").on("change", reload);
-});
-gulp.task('serve-build', function() {
-  browserSync.init({
-      server: {
-          baseDir: "./"
-      },
-      startPath: "build/"
-  });
-  gulp.watch("build/**/*").on("change", reload);
-});
+        startPath: 'build/'
+    })
+    watch('build/**/*').on('change', browserSync.reload)
+}
 
-// HTML processing
-gulp.task('html', gulp.series('images', function() {
+function json(cb) {
+    src(folder.src + 'data/**/*')
+    .pipe(dest(folder.build + 'data/'))
+    cb()
+}
 
-  var out = folder.build;
-  var page = gulp.src(folder.src + '*.html')
-        .pipe(newer(out));
-    page = page.pipe(replace({
+function fonts(cb) {
+    src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
+    .pipe(dest(folder.build + 'webfonts/'))
+    cb()
+}
+
+function images(cb) {
+    src(folder.src + 'images/**/*')
+    .pipe(newer(folder.build + 'images/'))
+    .pipe(imagemin({ optimizationlevel: 5 }))
+    .pipe(dest(folder.build + 'images/'))
+    cb()
+}
+
+function css(cb) {
+    src([
+        './node_modules/bootstrap/dist/css/bootstrap.css',
+        './node_modules/@fortawesome/fontawesome-free/css/all.css',
+        folder.src + 'css/**/*'
+    ])
+    .pipe(concat('main.css'))
+    .pipe(cleancss())
+    .pipe(uglifycss())
+    .pipe(dest(folder.build + 'css/'))
+    cb()
+}
+
+function html(cb) {
+    src(folder.src + '*.html')
+    .pipe(newer(folder.build))
+    .pipe(replace({
         'js': './js/main.js',
         'css': './css/main.css'
-      }))
-    page = page.pipe(htmlclean());  
-    return page.pipe(gulp.dest(out));
-}));
+    }))
+    .pipe(htmlclean())
+    .pipe(dest(folder.build))
+    cb()
+}
 
-// JSON processing
-gulp.task('json', function() {
-  var json = gulp.src(folder.src + 'data/**/*');
-  return json.pipe(gulp.dest(folder.build + 'data/'));
-});
-
-// Fontawesome fonts copy
-gulp.task('fonts', function() {
-  var fonts = gulp.src('./node_modules/@fortawesome/fontawesome-free/webfonts/**/*');
-  return fonts.pipe(gulp.dest(folder.build + 'webfonts/'));
-})
-
-// JavaScript processing
-gulp.task('js', function() {
-
-    var jsbuild = gulp.src([
-      './node_modules/jquery/dist/jquery.js',
+function js(cb) {
+    src([
+        './node_modules/jquery/dist/jquery.js',
       './node_modules/angular/angular.js',
       './node_modules/angular-animate/angular-animate.js',
       './node_modules/angular-route/angular-route.js',
       './node_modules/bootstrap/dist/js/bootstrap.bundle.js',
       './node_modules/lodash/lodash.js',
       folder.src + 'js/**/*'
-  ])
-      .pipe(deporder())
-      .pipe(concat('main.js'));
-  
-    
-    jsbuild = jsbuild
-      .pipe(stripdebug())
-      .pipe(uglify());
-    
-  
-    return jsbuild.pipe(gulp.dest(folder.build + 'js/'));
-  
-  });
+    ])
+    .pipe(deporder())
+    .pipe(concat('main.js'))
+    .pipe(stripdebug())
+    .pipe(uglify())
+    .pipe(dest(folder.build + 'js/'))
+    cb()
+}
 
-  // CSS processing
-  gulp.task('css', gulp.series('images', function() {
-    var cssbuild =  gulp.src([
-    './node_modules/bootstrap/dist/css/bootstrap.css',
-    './node_modules/@fortawesome/fontawesome-free/css/all.css',
-    folder.src + 'css/**/*'
-    ]);
-    cssbuild = cssbuild.pipe(concat('main.css')).pipe(cleancss()).pipe(uglifycss());
-    return cssbuild.pipe(gulp.dest(folder.build + 'css/'));
-  }));
-
-  gulp.task('build', gulp.series(['html', 'css', 'js', 'json', 'fonts']));
+exports.build = series(images, html, css, js, json, fonts)
+exports.servebuild = servebuild
