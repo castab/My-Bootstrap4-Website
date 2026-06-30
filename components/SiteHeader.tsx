@@ -17,7 +17,7 @@ export function SiteHeader() {
             <Link className="transition hover:text-white" href="/about">
               About
             </Link>
-            <a className="text-slate-400 transition hover:text-white" href="https://github.com/castab/My-Bootstrap4-Website" aria-label="GitHub source">
+            <a className="text-slate-400 transition hover:text-white" href="https://github.com/castab/showcase" aria-label="GitHub source">
               <GitHubIcon className="h-5 w-5" />
             </a>
           </div>

@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/castab/My-Bootstrap4-Website.git"
+    "url": "git+https://github.com/castab/showcase.git"
   },
   "author": "Brayan Castaneda",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/castab/My-Bootstrap4-Website/issues"
+    "url": "https://github.com/castab/showcase/issues"
   },
-  "homepage": "https://www.supernet.tech",
+  "homepage": "https://www.supernettech.com",
   "dependencies": {
     "next": "16.2.9",
     "react": "^19.2.3",

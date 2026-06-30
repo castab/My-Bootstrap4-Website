@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-This repository powers my personal portfolio and resume site at [supernet.tech](https://www.supernet.tech).
+This repository powers my personal portfolio and resume site at https://www.supernettech.com.
 
 The site started as an older Bootstrap and AngularJS experiment from earlier in my career. I rebuilt it as a static Next.js and Tailwind CSS site to better reflect how I currently approach frontend development: pragmatic tooling, authored content, intentional UI, and as little runtime complexity as the problem allows.
 
