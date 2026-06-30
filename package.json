@@ -1,10 +1,12 @@
 {
-  "name": "my-bootstrap4-website",
-  "version": "1.0.0",
-  "description": "My website running on Bootstrap4 using AngularJS",
-  "main": "app.js",
+  "name": "personal-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Brayan Castaneda's static personal portfolio website.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -15,28 +17,21 @@
   "bugs": {
     "url": "https://github.com/castab/My-Bootstrap4-Website/issues"
   },
-  "homepage": "https://github.com/castab/My-Bootstrap4-Website#readme",
+  "homepage": "https://www.supernet.tech",
   "dependencies": {
-    "angular": "^1.8.0",
-    "angular-animate": "^1.7.9",
-    "angular-route": "^1.7.9",
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.5.0",
-    "lodash": "^4.17.21"
+    "next": "16.2.9",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.12.0",
-    "browser-sync": "^2.26.14",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-deporder": "^1.2.0",
-    "gulp-html-replace": "^1.6.2",
-    "gulp-htmlclean": "^2.7.22",
-    "gulp-imagemin": "^5.0.3",
-    "gulp-newer": "^1.4.0",
-    "gulp-strip-debug": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglifycss": "^1.1.0"
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "^10.4.22",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.2.9",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^5.9.3"
   }
 }
