@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(119, 228, 200, 0.18), transparent 32rem),
+    radial-gradient(circle at 85% 10%, rgba(227, 154, 95, 0.16), transparent 28rem),
+    #08111f;
+  color: #e5edf7;
+}
+
+::selection {
+  background: rgba(119, 228, 200, 0.32);
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .intro-rise {
+    animation: intro-rise 700ms ease-out both;
+  }
+
+  .intro-fade {
+    animation: intro-fade 900ms ease-out both;
+  }
+
+  .intro-delay-1 {
+    animation-delay: 120ms;
+  }
+
+  .intro-delay-2 {
+    animation-delay: 260ms;
+  }
+
+  .intro-delay-3 {
+    animation-delay: 420ms;
+  }
+}
+
+@keyframes intro-rise {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes intro-fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
