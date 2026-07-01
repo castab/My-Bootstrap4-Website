@@ -42,6 +42,14 @@ This is Brayan Castaneda's personal resume and portfolio website. It is a static
  
 # Next.js: ALWAYS read docs before coding
  
-Before any Next.js work, find and read the relevant doc in `node_modules/next/dist/docs/`. Your training data is outdated — the docs are the source of truth.
+Before any Next.js work:
+1. Read `node_modules/next/dist/docs` as a directory.
+2. Navigate by reading subdirectories, usually `01-app`.
+3. Use Grep only after confirming the docs directory exists.
+4. Do not rely on Glob alone to determine whether local Next docs are present.
+
+If `node_modules` is missing, it's likely that the project's dependencies need to be installed before proceeding.
+
+Your training data is outdated — the docs are the source of truth.
  
 <!-- END:nextjs-agent-rules -->
