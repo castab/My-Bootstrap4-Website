@@ -27,7 +27,7 @@ export default function BluetoothAudioPage() {
 
         <TextBlock title="Results">
           <p>
-            The enhancement led to years of wireless audio use. If I rebuilt it now, I would likely design a dedicated circuit board and use an isolated DC supply instead of a dedicated battery system.
+            The upgrade gave me years of reliable wireless audio. If I rebuilt it now, I would likely design a dedicated circuit board and use an isolated DC supply instead of a dedicated battery system.
           </p>
         </TextBlock>
 

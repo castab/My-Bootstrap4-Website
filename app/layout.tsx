@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="font-sans antialiased">
-        <div className="min-h-screen overflow-hidden">
+        <div className="min-h-screen">
           <SiteHeader />
           {children}
         </div>

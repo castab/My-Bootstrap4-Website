@@ -17,7 +17,7 @@ export default function AboutPage() {
         <section className="mt-16 space-y-8">
           <TextBlock title="Why engineering">
             <p>
-              I worked retail for most of my early working life and eventually found it unfulfilling. I enjoyed my coworkers, but the work became repetitive, and I wanted a path that pushed me intellectually and consciously.
+              I worked retail for most of my early working life and eventually found it unfulfilling. I enjoyed my coworkers, but the work became repetitive, and I wanted a path that pushed me intellectually and professionally.
             </p>
             <p>
               A few years in engineering school changed how I saw the physical world. One of the biggest leaps for me was learning the Fourier Transform and seeing how powerful mathematical tools could explain real signals and systems.

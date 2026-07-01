@@ -30,7 +30,7 @@ export default function WebDevelopmentPage() {
 
         <div className="grid gap-6 md:grid-cols-2">
           <ImageNote src="/images/web3.jpg" caption="A website for my dad's trucking company." />
-          <ImageNote src="/images/web2.jpg" caption="A PHP endpoint used to feed a site current weather information." />
+          <ImageNote src="/images/web2.jpg" caption="A PHP endpoint used to feed current weather information to a site." />
         </div>
       </section>
     </ProjectShell>
