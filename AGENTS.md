@@ -37,3 +37,11 @@ This is Brayan Castaneda's personal resume and portfolio website. It is a static
 - Avoid dependencies unless they materially improve the site.
 - Prefer small, readable React components.
 - Keep changes static-hosting friendly.
+
+<!-- BEGIN:nextjs-agent-rules -->
+ 
+# Next.js: ALWAYS read docs before coding
+ 
+Before any Next.js work, find and read the relevant doc in `node_modules/next/dist/docs/`. Your training data is outdated — the docs are the source of truth.
+ 
+<!-- END:nextjs-agent-rules -->
