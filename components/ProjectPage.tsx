@@ -12,7 +12,7 @@ type ProjectHeroProps = {
 
 export function ProjectHero({ eyebrow, title, summary, image, imageAlt = '' }: ProjectHeroProps) {
   return (
-    <header className="mt-8 grid gap-10 md:grid-cols-[1fr_0.9fr] md:items-end">
+    <header className="mt-5 grid gap-10 md:grid-cols-[1fr_0.9fr] md:items-end">
       <PageIntro eyebrow={eyebrow} title={title} summary={summary} accent="copper" />
       {image ? <ExpandableImage className="rounded-[2rem] border border-white/10 object-cover shadow-glow" src={image} alt={imageAlt} caption={title} /> : null}
     </header>
@@ -21,9 +21,9 @@ export function ProjectHero({ eyebrow, title, summary, image, imageAlt = '' }: P
 
 export function ProjectShell({ children }: { children: ReactNode }) {
   return (
-    <main className="py-20">
+    <main className="py-12 sm:py-16">
       <Container className="max-w-5xl">
-        <ButtonLink href="/projects" variant="ghost">
+        <ButtonLink href="/projects" variant="secondary">
           Back to projects
         </ButtonLink>
         {children}
