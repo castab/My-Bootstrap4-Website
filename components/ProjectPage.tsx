@@ -14,7 +14,7 @@ export function ProjectHero({ eyebrow, title, summary, image, imageAlt = '' }: P
   return (
     <header className="mt-5 grid gap-10 md:grid-cols-[1fr_0.9fr] md:items-end">
       <PageIntro eyebrow={eyebrow} title={title} summary={summary} accent="copper" />
-      {image ? <ExpandableImage className="rounded-[2rem] border border-white/10 object-cover shadow-glow" src={image} alt={imageAlt} caption={title} /> : null}
+      {image ? <ExpandableImage buttonClassName="rounded-[2rem] border border-white/10 shadow-glow" className="block w-full object-cover" src={image} alt={imageAlt} caption={title} /> : null}
     </header>
   )
 }

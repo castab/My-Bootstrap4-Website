@@ -7,9 +7,10 @@ type ExpandableImageProps = {
   alt?: string
   caption?: string
   className?: string
+  buttonClassName?: string
 }
 
-export function ExpandableImage({ src, alt = '', caption, className = '' }: ExpandableImageProps) {
+export function ExpandableImage({ src, alt = '', caption, className = '', buttonClassName = '' }: ExpandableImageProps) {
   const [isOpen, setIsOpen] = useState(false)
   const closeButtonRef = useRef<HTMLButtonElement>(null)
   const titleId = useId()
@@ -39,7 +40,7 @@ export function ExpandableImage({ src, alt = '', caption, className = '' }: Expa
 
   return (
     <>
-      <button className="group relative block w-full cursor-zoom-in overflow-hidden text-left" type="button" onClick={() => setIsOpen(true)} aria-label={`Expand ${accessibleName}`}>
+      <button className={`group relative block w-full cursor-zoom-in overflow-hidden text-left ${buttonClassName}`} type="button" onClick={() => setIsOpen(true)} aria-label={`Expand ${accessibleName}`}>
         <img className={className} src={src} alt={accessibleName} />
         <span className="pointer-events-none absolute bottom-4 right-4 rounded-full border border-white/15 bg-ink/75 px-3 py-1 text-xs font-semibold text-white opacity-0 backdrop-blur transition group-hover:opacity-100 group-focus-visible:opacity-100">
           Expand

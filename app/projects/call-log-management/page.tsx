@@ -34,7 +34,7 @@ export default function CallLogManagementPage() {
           <ImageNote src="/images/clmc6.jpg" caption="HTML5 helped with form validation, but server-side validation still guarded storage." />
         </div>
 
-        <ImageNote src="/images/clmc7.jpg" caption="A peek into the code. The original project was not published publicly because it was live and in use." />
+        <ImageNote src="/images/clmc7.jpg" caption="A peek into the code." />
       </section>
     </ProjectShell>
   )

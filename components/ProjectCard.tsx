@@ -6,7 +6,7 @@ export function ProjectCard({ project }: { project: Project }) {
   const card = (
     <Card as="article" className="group h-full" interactive>
       <div className="aspect-[16/10] overflow-hidden bg-slate-900">
-        <img className="h-full w-full object-cover opacity-80 transition duration-500 group-hover:scale-105 group-hover:opacity-100" src={project.image} alt={project.title} />
+        <img className="h-full w-full object-cover transition duration-500 group-hover:scale-105" src={project.image} alt={project.title} />
       </div>
       <div className="flex flex-col p-6">
         <div className="mb-4 flex flex-wrap gap-2">
