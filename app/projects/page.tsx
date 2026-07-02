@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function ProjectsPage() {
   return (
-    <main className="py-20">
+    <main className="py-10">
       <Container>
         <PageIntro eyebrow="notable work" title="Project notes, experiments, and engineering background." summary="A collection of software, embedded systems, and hardware projects that shaped how I think about practical engineering work." />
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

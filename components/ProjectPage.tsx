@@ -21,7 +21,7 @@ export function ProjectHero({ eyebrow, title, summary, image, imageAlt = '' }: P
 
 export function ProjectShell({ children }: { children: ReactNode }) {
   return (
-    <main className="py-12 sm:py-16">
+    <main className="py-6">
       <Container className="max-w-5xl">
         <ButtonLink href="/projects" variant="secondary">
           Back to projects
