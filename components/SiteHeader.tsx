@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { GitHubIcon } from './GitHubIcon'
+import { LinkedInIcon } from './LinkedInIcon'
 import { Container } from './ui'
 
 export function SiteHeader() {
@@ -17,8 +18,11 @@ export function SiteHeader() {
             <Link className="transition hover:text-white" href="/about">
               About
             </Link>
-            <a className="text-slate-400 transition hover:text-white" href="https://github.com/castab/personal-portfolio" aria-label="GitHub source">
+            <a className="text-slate-400 transition hover:text-white" href="https://github.com/castab" aria-label="GitHub profile" target="_blank" rel="noreferrer">
               <GitHubIcon className="h-5 w-5" />
+            </a>
+            <a className="text-slate-400 transition hover:text-white" href="https://www.linkedin.com/in/brayanjcastaneda" aria-label="LinkedIn profile" target="_blank" rel="noreferrer">
+              <LinkedInIcon className="h-5 w-5" />
             </a>
           </div>
         </Container>
